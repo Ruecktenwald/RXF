@@ -26,6 +26,7 @@ Latest commit 8e67b94 on Feb 20
 160 lines (131 sloc)  3.01 KB
 
 # Byte-compiled / optimized / DLL files
+RoxburyFit_website/__pycache__/
 __pycache__/
 *.py[cod]
 *$py.class
