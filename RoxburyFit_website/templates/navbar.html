@@ -5,4 +5,12 @@
     <span>{% if request.path == about_url %}About{% else %}<a href="{{ about_url }}">About</a>{% endif %}</span>
     {% url 'contact' as contact_url %}
     <span>{% if request.path == contact_url %}Contact{% else %}<a href="{{ contact_url }}">Contact</a>{% endif %}</span>
+    <span style= "float: right">
+        {% if user.is_authenticated %}
+            <span>Hi {{ user.username }}</span>
+        {% else %}
+            <span><a href="{% url 'login' %}">Login</a></span>
+            {% endif %}
+    </span>
+
 </div>
